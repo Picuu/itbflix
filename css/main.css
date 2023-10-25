@@ -1,0 +1,25 @@
+section, aside {
+    display: flex;
+    flex-direction: column;
+}
+
+article > img, a > img {
+    border-radius: .5rem;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;
+}
+
+.img__container > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 30px #000;
+}
+
+.section__content, ol{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
