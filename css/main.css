@@ -12,7 +12,7 @@ article > img, a > img {
 
 .img__container > img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: .5rem;
     box-shadow: 0px 0px 30px #000;
@@ -22,4 +22,5 @@ article > img, a > img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
+    align-items: baseline;
 }
