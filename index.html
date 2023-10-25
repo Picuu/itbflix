@@ -7,13 +7,11 @@
 
     <link rel="icon" href="./src/logo.png" type="image/png">
 
+    <link rel="stylesheet" href="./css/main.css">
+
     <meta name="author" content="Carlos Capó">
     <meta name="description" content="Práctica HTML M04UF1. ITBFlix: Portal web al estilo Netflix.">
     <meta name="keywords" content="netflix, itb, peliculas, series, actores">
-
-    <!-- DESCOMENTAR SI SE QUIERE VER LA WEB SIN ROMPERSE LA CABEZA :D -->
-    <!-- <style>img { width: 25%; }</style> -->
-
 </head>
 <body>
 
@@ -36,354 +34,259 @@
         <section>
             <h2 id="seccion-peliculas">Películas</h2>
 
-            <article>
-                <figure>
-                    <img src="./src/posters/peliculas/it.jpg" alt="Póster de la película IT" title="IT">
-                    <figcaption>
-                        <h4><a href="#">IT</a></h4>
-                        <p>Terror, 2017, 2h 14 min</p>
-                    </figcaption>
-                </figure>
-            </article>
+            <div class="section__content">
+                <article>
+                    <div class="img__container">
+                        <img src="./src/posters/peliculas/it.jpg" alt="Póster de la película IT" title="IT">
+                    </div>
+                    <h4><a href="#">IT</a></h4>
+                    <p>Terror, 2017, 2h 14 min</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img loading="lazy" src="./src/posters/peliculas/spiderman-no-way-home.jpg" alt="Póster de la película Spider-Man No Way Home" title="Spider-Man No Way Home">
-                    <figcaption>
-                        <h4><a href="#">Spider-Man No Way Home</a></h4>
-                        <p>Ciencia ficción, 2021, 2h 28 min</p>
-                    </figcaption>
-                </figure>
-            </article>
+                <article>
+                    <div class="img__container">
+                        <img loading="lazy" src="./src/posters/peliculas/spiderman-no-way-home.jpg" alt="Póster de la película Spider-Man No Way Home" title="Spider-Man No Way Home">
+                    </div>
+                    <h4><a href="#">Spider-Man No Way Home</a></h4>
+                    <p>Ciencia ficción, 2021, 2h 28 min</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img loading="lazy" src="./src/posters/peliculas/lobo-wall-street.jpg" alt="Póster de la película El Lobo de Wall Street" title="El Lobo de Wall Street">
-                    <figcaption>
-                        <h4><a href="#">El Lobo de Wall Street</a></h4>
-                        <p>Humor negro, 2013, 2h 59 min</p>
-                    </figcaption>
-                </figure>
-            </article>
+                <article>
+                    <div class="img__container">
+                        <img loading="lazy" src="./src/posters/peliculas/lobo-wall-street.jpg" alt="Póster de la película El Lobo de Wall Street" title="El Lobo de Wall Street">
+                    </div>
+                    <h4><a href="#">El Lobo de Wall Street</a></h4>
+                    <p>Humor negro, 2013, 2h 59 min</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img loading="lazy" src="./src/posters/peliculas/wonder.jpg" alt="Póster de la película Wonder" title="Wonder">
-                    <figcaption>
-                        <h4><a href="#">Wonder</a></h4>
-                        <p>Drama, 2017, 1h 53 min</p>
-                    </figcaption>
-                </figure>
-            </article>
+                <article>
+                    <div class="img__container">
+                        <img loading="lazy" src="./src/posters/peliculas/wonder.jpg" alt="Póster de la película Wonder" title="Wonder">
+                    </div>
+                    <h4><a href="#">Wonder</a></h4>
+                    <p>Drama, 2017, 1h 53 min</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img loading="lazy" src="./src/posters/peliculas/joker.jpg" alt="Póster de la película Joker" title="Joker">
-                    <figcaption>
-                        <h4><a href="#">Joker</a></h4>
-                        <p>Drama social, 2019, 2h 1 min</p>
-                    </figcaption>
-                </figure>
-            </article>
+                <article>
+                    <div class="img__container">
+                        <img loading="lazy" src="./src/posters/peliculas/joker.jpg" alt="Póster de la película Joker" title="Joker">
+                    </div>
+                    <h4><a href="#">Joker</a></h4>
+                    <p>Drama social, 2019, 2h 1 min</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img loading="lazy" src="./src/posters/peliculas/pitufos-2.jpg" alt="Póster de la película Los Pitufos 2" title="Los Pitufos 2">
-                    <figcaption>
-                        <h4><a href="#">Los Pitufos 2</a></h4>
-                        <p>Familiar, 2013, 1h 44 min</p>
-                    </figcaption>
-                </figure>
-            </article>
+                <article>
+                    <div class="img__container">
+                        <img loading="lazy" src="./src/posters/peliculas/pitufos-2.jpg" alt="Póster de la película Los Pitufos 2" title="Los Pitufos 2">
+                    </div>
+                    <h4><a href="#">Los Pitufos 2</a></h4>
+                    <p>Familiar, 2013, 1h 44 min</p>
+                </article>
+            </div>
         </section>
 
         <section>
             <h2 id="seccion-actores">Actores</h2>
 
-            <article>
-                <figure>
+            <div class="section__content">
+                <article>
                     <img loading="lazy" src="./src/actores/leonardo-dicaprio.jpg" alt="Fotografía de Leonardo DiCaprio" title="Leonardo DiCaprio">
-                    <figcaption>
-                        <h4>Leonardo DiCaprio</h4>
-                        <p>Titanic</p>
-                        <p>9,8</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4>Leonardo DiCaprio</h4>
+                    <p>Titanic</p>
+                    <p>9,8</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/actores/joaquin-phoenix.jpg" alt="Fotografía de Joaquin Phoenix" title="Joaquin Phoenix">
-                    <figcaption>
-                        <h4>Joaquin Phoenix</h4>
-                        <p>Joker</p>
-                        <p>9,1</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4>Joaquin Phoenix</h4>
+                    <p>Joker</p>
+                    <p>9,1</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/actores/adam-sandler.jpg" alt="Fotografía de Adam Sandler" title="Adam Sandler">
-                    <figcaption>
-                        <h4>Adam Sandler</h4>
-                        <p>Niños grandes</p>
-                        <p>9,5</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4>Adam Sandler</h4>
+                    <p>Niños grandes</p>
+                    <p>9,5</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/actores/zach-galifianakis.jpg" alt="Fotografía de Zach Galifianakis" title="Zach Galifianakis">
-                    <figcaption>
-                        <h4>Zach Galifianakis</h4>
-                        <p>Resacón en Las Vegas</p>
-                        <p>8,7</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4>Zach Galifianakis</h4>
+                    <p>Resacón en Las Vegas</p>
+                    <p>8,7</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/actores/jonah-hill.jpg" alt="Fotografía de Jonah Hill" title="Jonah Hill">
-                    <figcaption>
-                        <h4>Jonah Hill</h4>
-                        <p>Supersalidos</p>
-                        <p>8,9</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4>Jonah Hill</h4>
+                    <p>Supersalidos</p>
+                    <p>8,9</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/actores/jennifer-lawrence.jpg" alt="Fotografía de Jennifer Lawrence" title="Jennifer Lawrence">
-                    <figcaption>
-                        <h4>Jennifer Lawrence</h4>
-                        <p>Los juegos del hambre</p>
-                        <p>8,1</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4>Jennifer Lawrence</h4>
+                    <p>Los juegos del hambre</p>
+                    <p>8,1</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/actores/robert-downey-jr.jpg" alt="Fotografía de Robert Downey Jr." title="Robert Downey Jr.">
-                    <figcaption>
-                        <h4>Robert Downey Jr.</h4>
-                        <p>Vengadores: Endgame</p>
-                        <p>9,3</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4>Robert Downey Jr.</h4>
+                    <p>Vengadores: Endgame</p>
+                    <p>9,3</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/actores/ryan-gosling.jpg" alt="Fotografía de Ryan Gosling" title="Ryan Gosling">
-                    <figcaption>
-                        <h4>Ryan Gosling</h4>
-                        <p>Barbie</p>
-                        <p>7,8</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4>Ryan Gosling</h4>
+                    <p>Barbie</p>
+                    <p>7,8</p>
+                </article>
+            </div>
         </section>
-
-        <aside>
-            <h2 id="seccion-festivales">Festivales</h2>
-
-            <article>
-                <figure>
-                    <img loading="lazy" src="./src/posters/peliculas/sin-novedad-en-el-frente.jpg" alt="Póster de la película Sin novedad en el frente" title="Sin novedad en el frente">
-                    <figcaption>
-                        <h4>Oscar mejor película extranjera</h4>
-                        <p>Sin novedad en el frente, ganadora de 4 premios Oscar.</p>
-                    </figcaption>
-                </figure>
-            </article>
-
-            <article>
-                <figure>
-                    <img loading="lazy" src="./src/posters/peliculas/avatar-el-sentido-del-agua.jpg" alt="Póster de la película Avatar: El sentido del agua" title="Avatar: El sentido del agua">
-                    <figcaption>
-                        <h4>95 Edición de los Oscar (2023)</h4>
-                        <p>Avatar: El sentido del agua, considerada la película con mejores efectos visuales de 2023.</p>
-                    </figcaption>
-                </figure>
-            </article>
-        </aside>
         
         <section>
             <h2 id="seccion-series">Series</h2>
 
-            <article>
-                <figure>
+            <div class="section__content">
+                <article>
                     <img loading="lazy" src="./src/posters/series/sex-education.jpg" alt="Póster de la serie Sex Education" title="Sex Education">
-                    <figcaption>
-                        <h4><a href="#">Sex Education</a></h4>
-                        <p>+16, 4 temporadas, 2023</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4><a href="#">Sex Education</a></h4>
+                    <p>+16, 4 temporadas, 2023</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/posters/series/the-good-doctor.jpg" alt="Póster de la serie The Good Doctor" title="The Good Doctor">
-                    <figcaption>
-                        <h4><a href="#">The Good Doctor</a></h4>
-                        <p>+16, 6  temporadas, 2022</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4><a href="#">The Good Doctor</a></h4>
+                    <p>+16, 6  temporadas, 2022</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/posters/series/lupin.jpg" alt="Póster de la serie Lupin" title="Lupin">
-                    <figcaption>
-                        <h4><a href="#">Lupin</a></h4>
-                        <p>+12, 3 temporadas, 2023</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4><a href="#">Lupin</a></h4>
+                    <p>+12, 3 temporadas, 2023</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/posters/series/peaky-blinders.jpg" alt="Póster de la serie Peaky Blinders" title="Peaky Blinders">
-                    <figcaption>
-                        <h4><a href="#">Peaky Blinders</a></h4>
-                        <p>+16, 6 temporadas, 2022</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4><a href="#">Peaky Blinders</a></h4>
+                    <p>+16, 6 temporadas, 2022</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/posters/series/el-cuerpo-en-llamas.jpg" alt="Póster de la serie El cuerpo en llamas" title="El cuerpo en llamas">
-                    <figcaption>
-                        <h4><a href="#">El cuerpo en llamas</a></h4>
-                        <p>+16, 8 episodios, 2023</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4><a href="#">El cuerpo en llamas</a></h4>
+                    <p>+16, 8 episodios, 2023</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/posters/series/how-to-sell-drugs-online.jpg" alt="Póster de la serie Cómo vender drogas online (a toda pastilla)" title="Cómo vender drogas online (a toda pastilla)">
-                    <figcaption>
-                        <h4><a href="#">Cómo vender drogas online (a toda pastilla)</a></h4>
-                        <p>+16, 3 temporadas, 2021</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4><a href="#">Cómo vender drogas online (a toda pastilla)</a></h4>
+                    <p>+16, 3 temporadas, 2021</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/posters/series/the-end-of-the-fucking-world.jpg" alt="Póster de la serie The End of the F***ing World" title="The End of the F***ing World">
-                    <figcaption>
-                        <h4><a href="#">The End of the F***ing World</a></h4>
-                        <p>+16, 2 temporadas, 2019</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4><a href="#">The End of the F***ing World</a></h4>
+                    <p>+16, 2 temporadas, 2019</p>
+                </article>
 
-            <article>
-                <figure>
+                <article>
                     <img loading="lazy" src="./src/posters/series/stranger-things.jpg" alt="Póster de la serie Stranger Things" title="Stranger Things">
-                    <figcaption>
-                        <h4><a href="#">Stranger Things</a></h4>
-                        <p>+16, 4 temporadas, 2022</p>
-                    </figcaption>
-                </figure>
-            </article>
+                    <h4><a href="#">Stranger Things</a></h4>
+                    <p>+16, 4 temporadas, 2022</p>
+                </article>
+            </div>
         </section>
+    </main>
 
-        <section>
-            <h2 id="seccion-masVisto">Lo más visto</h2>
+    <aside>
+        <h2 id="seccion-festivales">Festivales</h2>
 
+        <div class="section__content">
+            <article>
+                <img loading="lazy" src="./src/posters/peliculas/sin-novedad-en-el-frente.jpg" alt="Póster de la película Sin novedad en el frente" title="Sin novedad en el frente">
+                <h4>Oscar mejor película extranjera</h4>
+                <p>Sin novedad en el frente, ganadora de 4 premios Oscar.</p>
+            </article>
+    
+            <article>
+                <img loading="lazy" src="./src/posters/peliculas/avatar-el-sentido-del-agua.jpg" alt="Póster de la película Avatar: El sentido del agua" title="Avatar: El sentido del agua">
+                <h4>95 Edición de los Oscar (2023)</h4>
+                <p>Avatar: El sentido del agua, considerada la película con mejores efectos visuales de 2023.</p>
+            </article>
+        </div>
+    </aside>
+
+    <section>
+        <h2 id="seccion-masVisto">Lo más visto</h2>
+
+        <div class="section__content">
             <ol>
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/series/lupin.jpg" alt="Póster de la serie Lupin" title="Lupin">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/series/lupin.jpg" alt="Póster de la serie Lupin" title="Lupin">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/series/beckham.jpg" alt="Póster de la serie Beckham" title="Beckham">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/series/beckham.jpg" alt="Póster de la serie Beckham" title="Beckham">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/series/sex-education.jpg" alt="Póster de la serie Sex Education" title="Sex Education">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/series/sex-education.jpg" alt="Póster de la serie Sex Education" title="Sex Education">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/series/el-cuerpo-en-llamas.jpg" alt="Póster de la serie El Cuerpo en Llamas" title="El Cuerpo en Llamas">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/series/el-cuerpo-en-llamas.jpg" alt="Póster de la serie El Cuerpo en Llamas" title="El Cuerpo en Llamas">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/series/the-good-doctor.jpg" alt="Póster de la serie The Good Doctor" title="The Good Doctor">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/series/the-good-doctor.jpg" alt="Póster de la serie The Good Doctor" title="The Good Doctor">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/series/mi-dulce-niña.jpg" alt="Póster de la película Mi dulce niña" title="Mi dulce niña">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/series/mi-dulce-niña.jpg" alt="Póster de la película Mi dulce niña" title="Mi dulce niña">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/peliculas/napoleon.jpg" alt="Póster de la película Napoleón" title="Napoleón">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/peliculas/napoleon.jpg" alt="Póster de la película Napoleón" title="Napoleón">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/peliculas/fast-and-furious-5.jpg" alt="Póster de la película Fast and Furious 5" title="Fast and Furious 5">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/peliculas/fast-and-furious-5.jpg" alt="Póster de la película Fast and Furious 5" title="Fast and Furious 5">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/peliculas/oppenheimer.jpg" alt="Póster de la película Oppenheimer" title="Oppenheimer">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/peliculas/oppenheimer.jpg" alt="Póster de la película Oppenheimer" title="Oppenheimer">
+                    </a>
                 </li>
 
                 <li>
-                    <figure>
-                        <a href="#">
-                            <img loading="lazy" src="./src/posters/series/one-piece.jpg" alt="Póster de la serie One Piece" title="One Piece">
-                        </a>
-                    </figure>
+                    <a href="#">
+                        <img loading="lazy" src="./src/posters/series/one-piece.jpg" alt="Póster de la serie One Piece" title="One Piece">
+                    </a>
                 </li>
             </ol>
-        </section>
-
-    </main>
+        </div>
+    </section>
 
     <footer>
         <ul>
