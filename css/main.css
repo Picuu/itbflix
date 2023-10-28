@@ -68,6 +68,7 @@ h2 {
 
 .nav--list a, .nav--list li {
     padding: 1rem;
+    border-radius: .5rem;
 }
 
 .nav--list a:hover {
@@ -140,6 +141,110 @@ article {
 article > p {
     font-size: .85rem;
     text-align: center;
+}
+
+/* ---------- SECTION Peliculas ---------- */
+
+.poster-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.poster-card-img {
+    position: relative;
+    box-shadow: 0 60px 60px -60px rgba(255, 30, 0, .25);
+    transition: all 300ms ease;
+}
+
+.poster-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .35) 50%, rgba(0, 0, 0) 95%);
+    border-radius: .5rem;
+    opacity: 0;
+    transition: all 300ms ease;
+    z-index: 1;
+}
+
+.poster-card-info {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(25%);
+    opacity: 0;
+    transition: 300ms ease;
+    z-index: 2;
+}
+
+.poster-card-info > img {
+    width: 80%;
+}
+
+.poster-card-info > h4 {
+    /* font-size: .75rem; */
+    text-align: center;
+    margin: .5rem 0 0 0;
+    padding: 0;
+  }
+
+.poster-card-info::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+  }
+
+.poster-card:hover .poster-card-img, .poster-card:hover::before {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+.poster-card:hover::before {
+    opacity: 1;
+}
+
+.poster-card:hover .poster-card-info {
+    opacity: 1;
+    transform: translateY(-20%);
+}
+
+.spiderman-card > .poster-card-info > img {
+    width: 125%;
+}
+
+.spiderman-card > .poster-card-img {
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, .25);
+}
+
+.wallstreet-card > .poster-card-info > img {
+    width: 125%;
+}
+
+.wallstreet-card > .poster-card-img {
+    box-shadow: 0 60px 60px -60px rgba(0, 17, 145, 0.30);
+}
+
+.wonder-card > .poster-card-info > img {
+    width: 50%;
+}
+
+.wonder-card > .poster-card-img {
+    box-shadow: 0 60px 60px -60px rgba(0, 170, 255, 0.25);
+}
+
+.pitufos-card > .poster-card-img {
+    box-shadow: 0 60px 60px -60px rgba(255, 255, 255, 0.25);
 }
 
 /* ---------- SECTION Autores ---------- */
@@ -267,28 +372,38 @@ ol {
 
 footer {
     display: flex;
-    justify-content: center;
-    background-color: var(--text-color);
+    background-color: #ab060e;
     padding: var(--body-padding);
     margin-top: calc(var(--body-margin) * 4);
 }
 
 .footer__content {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    gap: 10%;
+    width: 100%;
 }
 
 .footer__content * {
-    color: var(--bg-color);
+    color: white;
 }
 
 .rrss--list {
     display: flex;
+    justify-content: flex-end;
     gap: var(--body-padding);
+    width: 40%;
 }
 
 .rrss--list li a{
-    color: var(--bg-color);
+    color: white;
+}
+
+footer address {
+    text-align: center;
+    width: 20%;
+}
+
+footer small {
+    width: 40%;
 }
