@@ -1,0 +1,86 @@
+img, iframe {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+iframe {
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sinopsis-section p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--body-padding);
+}
+
+.info-item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.info-age .info-description {
+    display: flex;
+    gap: .5rem;
+}
+
+.info-age .info-description::before {
+    content: '18+';
+    font-size: .75rem;
+    line-height: .75rem;
+    background-color: var(--red);
+    border-radius: .25rem;
+    padding: .25rem;
+}
+
+.info-cast {
+    margin-top: 2rem;
+}
+
+.info-term {
+    width: 10%;
+    min-width: 140px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.info-description {
+    width: 90%;
+}
+
+.info-description ul {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr));
+    gap: var(--body-margin);
+}
+
+.info-description figcaption p:last-of-type {
+    font-weight: 200;
+    color: grey;
+}
+
+@media (min-width: 1100px) {
+    .main-content {
+        flex-direction: row;
+        gap: var(--body-margin);
+    }
+
+    .first-content, .info-section {
+        width: 50%;
+    }
+}

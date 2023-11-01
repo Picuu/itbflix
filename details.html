@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>🎥 ITBFlix - Details</title>
+    <title>🎥 ITBFlix - Joker, detalles e información</title>
 
     <link rel="icon" href="./src/logo.png" type="image/png">
 
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/details.css">
 
     <meta name="author" content="Carlos Capó">
-    <meta name="description" content="Práctica CSS M04UF1. ITBFlix: Portal web al estilo Netflix.">
+    <meta name="description" content="Práctica CSS M04UF1. ITBFlix: Portal web al estilo Netflix. Página de detalles e información de una película concreta.">
     <meta name="keywords" content="netflix, itb, peliculas, series, actores">
 </head>
 <body>
@@ -31,7 +32,116 @@
     
     <div class="main--container">
         <main>
-            <h2>Información de la película</h2>
+            <h1>Joker</h1>
+            
+            <div class="main-content">
+                <div class="first-content">
+                    <section class="trailer-section">
+                        <h2>Tráiler</h2>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ygUHhImN98w?si=vnThoqbXoHpW7wlz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </section>
+    
+                    <section class="sinopsis-section">
+                        <h2>Sinopsis</h2>
+                        <div class="section-content">
+                            <p>Gotham, 1981. Arthur Fleck vive con su madre y su única motivación en la vida es hacer reír a la gente. Actúa haciendo de payaso en pequeños trabajos, pero tiene problemas mentales que hacen que la gente le vea como un bicho raro. Su gran sueño es actuar como cómico delante del público, pero una serie de trágicos acontecimientos le hará ir incrementando su ira contra una sociedad que le ignora.</p>
+                        </div>
+                    </section>
+                </div>
+    
+                <section class="info-section">
+                    <h2>Información general</h2>
+                    <dl class="info">
+                        <div class="info-item">
+                            <dt class="info-term">Título original</dt>
+                            <dd>Joker</dd>
+                        </div>
+    
+                        <div class="info-item">
+                            <dt class="info-term">Año</dt>
+                            <dd class="info-description">2019</dd>
+                        </div>
+    
+                        <div class="info-item">
+                            <dt class="info-term">Duración</dt>
+                            <dd class="info-description">121 minutos</dd>
+                        </div>
+    
+                        <div class="info-item">
+                            <dt class="info-term">Dirección</dt>
+                            <dd class="info-description">Todd Phillips</dd>
+                        </div>
+    
+                        <div class="info-item">
+                            <dt class="info-term">Guión</dt>
+                            <dd class="info-description">Todd Phillips, Scott Silver</dd>
+                        </div>
+    
+                        <div class="info-item">
+                            <dt class="info-term">Género</dt>
+                            <dd class="info-description">Películas dramáticas, Thrillers, Dramas sobre temas sociales.</dd>
+                        </div>
+    
+                        <div class="info-item info-age">
+                            <dt class="info-term">Clasificación</dt>
+                            <dd class="info-description">No recomendada para menores de 18 años.</dd>
+                        </div>
+    
+                        <div class="info-item info-cast">
+                            <dt class="info-term">Reparto</dt>
+                            <dd class="info-description">
+                                <ul>
+                                    <li>
+                                        <figure>
+                                            <img src="./src/actores/joaquin-phoenix.jpg" alt="Fotografía de Joaquin Phoenix" title="Joaquin Phoenix">
+                                            <figcaption>
+                                                <p>Joaquin Phoenix</p>
+                                                <p>Joker, Arthur Fleck</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./src/actores/robert-de-niro.jpg" alt="Fotografía de Robert De Niro" title="Robert De Niro">
+                                            <figcaption>
+                                                <p>Robert De Niro</p>
+                                                <p>Murray Franklin</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./src/actores/zazie-beetz.jpg" alt="Fotografía de Zazie Beetz" title="Zazie Beetz">
+                                            <figcaption>
+                                                <p>Zazie Beetz</p>
+                                                <p>Sophie Dumond</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./src/actores/frances-conroy.jpg" alt="Fotografía de Frances Conroy" title="Frances Conroy">
+                                            <figcaption>
+                                                <p>Frances Conroy</p>
+                                                <p>Penny Fleck</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./src/actores/brett-cullen.jpg" alt="Fotografía de Brett Cullen" title="Brett Cullen">
+                                            <figcaption>
+                                                <p>Brett Cullen</p>
+                                                <p>Thomas Wayne</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </div>
+                    </dl>
+                </section>
+            </div>
         </main>
     </div>
 
