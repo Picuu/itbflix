@@ -13,7 +13,7 @@
 
 /* ---------- GENERAL STYLES ---------- */
 
-* {
+*, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -54,7 +54,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: calc(var(--body-margin) * .75);
-    margin-top: var(--body-margin);
+    padding-top: var(--body-margin);
 }
 
 .header--logo {
@@ -372,6 +372,7 @@ ol {
 
 footer {
     display: flex;
+    justify-content: center;
     background-color: #ab060e;
     padding: var(--body-padding);
     margin-top: calc(var(--body-margin) * 4);
@@ -380,30 +381,33 @@ footer {
 .footer__content {
     display: flex;
     align-items: center;
-    gap: 10%;
-    width: 100%;
+    width: 80%;
 }
 
 .footer__content * {
     color: white;
 }
 
-.rrss--list {
+.rrss-list {
     display: flex;
     justify-content: flex-end;
-    gap: var(--body-padding);
-    width: 40%;
+    gap: .5rem;
+    margin-right: auto;
+    font-size: 1.9rem;
 }
 
-.rrss--list li a{
-    color: white;
+.rrss-list li i {
+    transition: color .2s ease;
+}
+
+.rrss-list li:hover i {
+    color: var(--bg-color);
 }
 
 footer address {
     text-align: center;
-    width: 20%;
 }
 
 footer small {
-    width: 40%;
+    margin-left: auto;
 }
