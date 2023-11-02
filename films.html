@@ -7,10 +7,12 @@
 
     <link rel="icon" href="./src/logo.png" type="image/png">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/films.css">
 
     <meta name="author" content="Carlos Capó">
-    <meta name="description" content="Práctica CSS M04UF1. ITBFlix: Portal web al estilo Netflix.">
+    <meta name="description" content="Práctica CSS M04UF1. ITBFlix: Portal web al estilo Netflix. Página del listado de películas y series.">
     <meta name="keywords" content="netflix, itb, peliculas, series, actores">
 </head>
 <body>
@@ -31,9 +33,118 @@
     
     <div class="main--container">
         <main>
-            <h2>Películas</h2>
+            <h1>Catálogo de películas</h1>
+
+            <section>
+                <div class="section__content">
+                    <article>
+                        <a class="poster" href="./details.html">
+                            <img class="poster-img" src="./src/posters/peliculas/it.jpg" alt="Póster de la película IT">
+                            <div class="poster-info">
+                                <h2>IT</h2>
+                                <p>Cuando empiezan a desaparecer niños en el pueblo de Derry (Maine), un pandilla de amigos lidia con sus mayores miedos al enfrentarse a un malvado payaso llamado Pennywise, cuya historia de asesinatos y violencia data de siglos. Adaptación cinematográfica de la conocida novela de Stephen King "It".</p>
+                                <ul class="tags">
+                                    <li>Terror</li>
+                                    <li>2017</li>
+                                    <li>2h 14min</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a class="poster" href="./details.html">
+                            <img class="poster-img" src="./src/posters/peliculas/spiderman-no-way-home.jpg" alt="Póster de la película Spider-Man No Way Home">
+                            <div class="poster-info">
+                                <h2>Spider-Man No Way Home</h2>
+                                <p>Por primera vez en la historia cinematográfica de Spider-Man, nuestro héroe, vecino y amigo es desenmascarado, y por tanto, ya no es capaz de separar su vida normal de los enormes riesgos que conlleva ser un superhéroe. Cuando pide ayuda al Doctor Strange, los riesgos pasan a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser él. Secuela de 'Spider-Man: Far From Home'.</p>
+                                <ul class="tags">
+                                    <li>Ciencia ficción</li>
+                                    <li>2021</li>
+                                    <li>2h 28min</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a class="poster" href="./details.html">
+                            <img class="poster-img" loading="lazy" src="./src/posters/peliculas/lobo-wall-street.jpg" alt="Póster de la película El Lobo de Wall Street">
+                            <div class="poster-info">
+                                <h2>El Lobo de Wall Street</h2>
+                                <p>Película basada en hechos reales del corredor de bolsa neoyorquino Jordan Belfort. A mediados de los años 80, Belfort era un joven honrado que perseguía el sueño americano, pero pronto en la agencia de valores aprendió que lo más importante no era hacer ganar a sus clientes, sino ser ambicioso y ganar una buena comisión. Su enorme éxito y fortuna le valió el mote de “El lobo de Wall Street”. Dinero. Poder. Mujeres. Drogas. Las tentaciones abundaban y el temor a la ley era irrelevante. Jordan y su manada de lobos consideraban que la discreción era una cualidad anticuada; nunca se conformaban con lo que tenían.</p>
+                                <ul class="tags">
+                                    <li>Humor negro</li>
+                                    <li>2013</li>
+                                    <li>2h 59min</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a class="poster" href="./details.html">
+                            <img class="poster-img" loading="lazy" src="./src/posters/peliculas/wonder.jpg" alt="Póster de la película Wonder">
+                            <div class="poster-info">
+                                <h2>Wonder</h2>
+                                <p>Un niño de 10 años nacido con una deformidad facial que le ha obligado a ser operado 27 veces de cirugía, se esfuerza por encajar en su nuevo colegio.</p>
+                                <ul class="tags">
+                                    <li>Drama</li>
+                                    <li>2017</li>
+                                    <li>1h 53min</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a class="poster" href="./details.html">
+                            <img class="poster-img" loading="lazy" src="./src/posters/peliculas/joker.jpg" alt="Póster de la película Joker">
+                            <div class="poster-info">
+                                <h2>Joker</h2>
+                                <p>Gotham, 1981. Arthur Fleck vive con su madre y su única motivación en la vida es hacer reír a la gente. Actúa haciendo de payaso en pequeños trabajos, pero tiene problemas mentales que hacen que la gente le vea como un bicho raro. Su gran sueño es actuar como cómico delante del público, pero una serie de trágicos acontecimientos le hará ir incrementando su ira contra una sociedad que le ignora.</p>
+                                <ul class="tags">
+                                    <li>Drama social</li>
+                                    <li>2019</li>
+                                    <li>2h 1min</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article>
+                        <a class="poster" href="./details.html">
+                            <img class="poster-img" loading="lazy" src="./src/posters/peliculas/pitufos-2.jpg" alt="Póster de la película Los Pitufos 2">
+                            <div class="poster-info">
+                                <h2>Los Pitufos 2</h2>
+                                <p>El malvado brujo Gargamel crea una pareja de criaturas revoltosas, una copia de los pitufos, llamados los Malotes, y que espera le permitan aprovecharse de su poderosa y mágica esencia. Pero cuando descubre que solo un auténtico Pitufo le puede dar lo que quiere -y que solamente un secreto que conoce Pitufina puede transformar a los Malotes en verdaderos pitufos- Gargamel secuestra a Pitufina y la lleva a París. Por lo que está en manos de Papá Pitufo, Torpe, Gruñón y Vanidoso regresar a nuestro mundo, y reunirse con sus amigos humanos Patrick y Grace Winslow, ¡y rescatarla!</p>
+                                <ul class="tags">
+                                    <li>Familiar</li>
+                                    <li>2013</li>
+                                    <li>1h 44min</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
         </main>
     </div>
+
+    <footer>
+        <div class="footer__content">
+            <ul class="rrss-list">
+                <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><i class='bx bxl-facebook-square'></i></a></li>
+                <li><a href="https://x.com" target="_blank" rel="noreferrer"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="https://youtube.com" target="_blank" rel="noreferrer"><i class='bx bxl-youtube'></i></a></li>
+            </ul>
+    
+            <address>Carrer d'Aiguablava 121<br>09033 Barcelona</address>
+    
+            <small>Copyright © 2023 - 2023</small>
+        </div>
+    </footer>
 
 </body>
 </html>
