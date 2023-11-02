@@ -7,8 +7,8 @@
 
     <link rel="icon" href="./src/logo.png" type="image/png">
 
-    <link rel="stylesheet" href="./css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/main.css">
 
     <meta name="author" content="Carlos Capó">
     <meta name="description" content="Práctica CSS M04UF1. ITBFlix: Portal web al estilo Netflix.">
@@ -16,6 +16,7 @@
 </head>
 <body>
 
+    <!------------ HEADER & NAV ------------>
     <header class="main--header">
         <img class="header--logo" src="./src/logo.png" alt="Logotipo de ITBFlix">
         
@@ -32,78 +33,74 @@
 
     <div class="main--container">
         <main>
+            <!------------ SECTION Peliculas ------------>
             <section>
                 <h2 id="films-section">Películas</h2>
 
                 <div class="section__content">
-                    <a href="./details.html">
-                        <article class="poster-card">
+                    <article>
+                        <a class="poster-card" href="./details.html">
                             <img class="poster-card-img" src="./src/posters/peliculas/it.jpg" alt="Póster de la película IT">
                             <div class="poster-card-info">
                                 <img src="./src/personajes/pennywise.png" alt="Foto del personaje Pennywise de la película IT">
                                 <h4>IT</h4>
-                                <!-- <p>Terror, 2017, 2h 14 min</p> -->
                             </div>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
 
-                    <a href="./details.html">
-                        <article class="poster-card spiderman-card">
+                    <article>
+                        <a class="poster-card spiderman-card" href="./details.html">
                             <img class="poster-card-img" class="poster" src="./src/posters/peliculas/spiderman-no-way-home.jpg" alt="Póster de la película Spider-Man No Way Home">
                             <div class="poster-card-info">
                              <img src="./src/personajes/spiderman.png" alt="Foto del personaje Spiderman de la película Spider-Man No Way Home">
                              <h4>Spider-Man No Way Home</h4>
-                             <!-- <p>Ciencia ficción, 2021, 2h 28 min</p> -->
                             </div>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
 
-                    <a href="./details.html">
-                        <article class="poster-card wallstreet-card">
+                    <article>
+                        <a class="poster-card wallstreet-card" href="./details.html">
                             <img class="poster-card-img" class="poster" src="./src/posters/peliculas/lobo-wall-street.jpg" alt="Póster de la película El Lobo de Wall Street">
                             <div class="poster-card-info">
                              <img src="./src/personajes/lobo-wall-street.png" alt="Foto del protagonista de la película El Lobo de Wall Street ">
                              <h4>El Lobo de Wall Street</h4>
-                            <!-- <p>Humor negro, 2013, 2h 59 min</p> -->
                             </div>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
 
-                    <a href="./details.html">
-                        <article class="poster-card wonder-card">
+                    <article>
+                        <a class="poster-card wonder-card" href="./details.html">
                             <img class="poster-card-img" class="poster" src="./src/posters/peliculas/wonder.jpg" alt="Póster de la película Wonder">
                             <div class="poster-card-info">
                                 <img src="./src/personajes/wonder.png" alt="Foto del protagonista de la película Wonder">
                                 <h4>Wonder</h4>
-                            <!-- <p>Drama, 2017, 1h 53 min</p> -->
                             </div>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
 
-                    <a href="./details.html">
-                        <article class="poster-card joker-card">
+                    <article>
+                        <a class="poster-card joker-card" href="./details.html">
                             <img class="poster-card-img" class="poster" src="./src/posters/peliculas/joker.jpg" alt="Póster de la película Joker">
                             <div class="poster-card-info">
                                 <img src="./src/personajes/joker.png" alt="Foto del personaje Joker de la película Joker">
                                 <h4>Joker</h4>
-                            <!-- <p>Drama social, 2019, 2h 1 min</p> -->
                             </div>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
 
-                    <a href="./details.html">
-                        <article class="poster-card pitufos-card">
+                    <article>
+                        <a class="poster-card pitufos-card" href="./details.html">
                             <img class="poster-card-img" class="poster" src="./src/posters/peliculas/pitufos-2.jpg" alt="Póster de la película Los Pitufos 2">
                             <div class="poster-card-info">
                                 <img src="./src/personajes/pitufos.png" alt="Foto de algunos personajes principales de la película Los Pitufos 2">
                                 <h4>Los Pitufos 2</h4>
-                            <!-- <p>Familiar, 2013, 1h 44 min</p> -->
                             </div>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
                 </div>
             </section>
 
+            <!------------ SECTION Autores ------------>
             <section>
                 <h2 id="actors-section">Actores</h2>
 
@@ -160,6 +157,7 @@
         </main>
         
         <div class="aside--section">
+            <!------------ ASIDE ------------>
             <aside>
                 <h2 id="news-section">Noticias</h2>
     
@@ -182,92 +180,95 @@
                 </div>
             </aside>
 
+            <!------------ SECTION Series ------------>
             <section>
                 <h2 id="series-section">Series</h2>
     
                 <div class="section__content series__content">
-                    <a href="./details.html">
-                        <article class="serie">
+                    <article>
+                        <a class="serie" href="./details.html">
                             <div class="poster--container">
                                 <img loading="lazy" src="./src/posters/series/sex-education.jpg" alt="Póster de la serie Sex Education" title="Sex Education">
                                 <h4>Sex Education</h4>
                             </div>
                             <p>+16, 4 temporadas, 2023</p>
-                        </article>
-                    </a>
-                    <a href="./details.html">
-                        <article class="serie">
+                        </a>
+                    </article>
+
+                    <article>
+                        <a class="serie" href="./details.html">
                             <div class="poster--container">
                                 <img loading="lazy" src="./src/posters/series/the-good-doctor.jpg" alt="Póster de la serie The Good Doctor" title="The Good Doctor">
                                 <h4>The Good Doctor</h4>
                             </div>
                             <p>+16, 6  temporadas, 2022</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
     
-                    <a href="./details.html">
-                        <article class="serie">
+                    <article>
+                        <a class="serie" href="./details.html">
                             <div class="poster--container">
                                 <img loading="lazy" src="./src/posters/series/lupin.jpg" alt="Póster de la serie Lupin" title="Lupin">
                                 <h4>Lupin</h4>
                             </div>
                             <p>+12, 3 temporadas, 2023</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
     
-                    <a href="./details.html">
-                        <article class="serie">
+                    <article>
+                        <a class="serie" href="./details.html">
                             <div class="poster--container">
                                 <img loading="lazy" src="./src/posters/series/peaky-blinders.jpg" alt="Póster de la serie Peaky Blinders" title="Peaky Blinders">
                                 <h4>Peaky Blinders</h4>
                             </div>
                             <p>+16, 6 temporadas, 2022</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
     
-                    <a href="./details.html">
-                        <article class="serie">
+                    <article>
+                        <a class="serie" href="./details.html">
                             <div class="poster--container">
                                 <img loading="lazy" src="./src/posters/series/el-cuerpo-en-llamas.jpg" alt="Póster de la serie El cuerpo en llamas" title="El cuerpo en llamas">
                                 <h4>El cuerpo en llamas</h4>
                             </div>
                             <p>+16, 8 episodios, 2023</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
     
-                    <a href="./details.html">
-                        <article class="serie">
+                    <article>
+                        <a class="serie" href="./details.html">
                             <div class="poster--container">
                                 <img loading="lazy" src="./src/posters/series/how-to-sell-drugs-online.jpg" alt="Póster de la serie Cómo vender drogas online (a toda pastilla)" title="Cómo vender drogas online (a toda pastilla)">
                                 <h4>Cómo vender drogas online (a toda pastilla)</h4>
                             </div>
                             <p>+16, 3 temporadas, 2021</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
     
-                    <a href="./details.html">
-                        <article class="serie">
+                    <article>
+                        <a class="serie" href="./details.html">
                             <div class="poster--container">
                                 <img loading="lazy" src="./src/posters/series/the-end-of-the-fucking-world.jpg" alt="Póster de la serie The End of the F***ing World" title="The End of the F***ing World">
                                 <h4>The End of the F***ing World</h4>
                             </div>
                             <p>+16, 2 temporadas, 2019</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
     
-                    <a href="./details.html">
-                        <article class="serie">
+                    <article>
+                        <a class="serie" href="./details.html">
                             <div class="poster--container">
                                 <img loading="lazy" src="./src/posters/series/stranger-things.jpg" alt="Póster de la serie Stranger Things" title="Stranger Things">
                                 <h4>Stranger Things</h4>
                             </div>
                             <p>+16, 4 temporadas, 2022</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
                 </div>
             </section>
         </div>
 
+        <!------------ SECTION Más Visto ------------>
         <section>
             <h2 id="most-viewed-section">Lo más visto</h2>
 
@@ -327,6 +328,7 @@
         </section>
     </div>
 
+    <!------------ FOOTER ------------>
     <footer>
         <div class="footer__content">
             <ul class="rrss-list">
