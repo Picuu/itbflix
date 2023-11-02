@@ -10,6 +10,7 @@ iframe {
 
 h1 {
     font-size: 3rem;
+    padding-top: var(--body-margin);
 }
 
 .main-content {
