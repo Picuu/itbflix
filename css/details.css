@@ -71,7 +71,7 @@ h1 {
     gap: var(--body-margin);
 }
 
-.info-description figcaption p:last-of-type {
+.info-description .texts p:last-of-type {
     font-weight: 200;
     color: grey;
 }
