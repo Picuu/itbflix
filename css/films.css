@@ -17,6 +17,7 @@ h2 {
 
 .poster {
     display: flex;
+    flex-direction: row;
     gap: var(--body-margin);
     border: 1px solid var(--secondary--color);
     border-radius: .5rem;
