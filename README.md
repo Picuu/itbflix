@@ -10,4 +10,26 @@ Realmente el proyecto me ha gustado, como también la cierta libertad que se nos
 
 Para finalizar, no creo que haya habido una parte concreta que sea más dificil que otra. Lo complicado, a mi parecer, ha sido que todo el portal web sea bonito, coherente y acorde a los requisitos mínimos establecidos. Cuando realizas un proyecto más pequeño es mucho más sencillo que todo cuadre, pero cuando ya aumentas de magnitud la dificultad aumenta. Para ayudarme en ese sentido, algunas veces he cojido el trozo de código con el que estaba trabajando, lo he aillado y, una vez terminado, lo he puesto de nuevo en la web. De este modo he podido centrarme en partes contretas sin despistarme por el resto de contenido.
 
-_\---Carlos Capó_
+Como conclusión, me gustaría agregar que estoy orgulloso de mi trabajo aún pensando que podría implementar algunos detalles más, pero por falta de tiempo, debido seguramente a mala organización en los primeros días de desarrollo, no puedo. Creo que la web está completa y cumple con mis própias expectativas personales :D
+
+## Capturas de pantalla
+
+### Página de inicio
+
+![Inicio 1](./.md-imgs/home1.png)
+![Inicio 2](./.md-imgs/home2.png)
+![Inicio 3](./.md-imgs/home3.png)
+
+### Lista de películas
+
+![Películas 1](./.md-imgs/peliculas1.png)
+![Películas 2](./.md-imgs/peliculas2.png)
+
+### Página de detalle
+
+![Detalle 1](./.md-imgs/detalle1.png)
+![Detalle 2](./.md-imgs/detalle2.png)
+
+### Página de registro
+
+![Registro 1](./.md-imgs/registro1.png)
