@@ -1,0 +1,130 @@
+section {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--body-margin);
+}
+
+h1 {
+    font-size: 3rem;
+    padding: var(--body-margin) 0;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-90deg, transparent 0%, rgba(20,20,20,1) 95%);
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent 0%, rgba(20,20,20,.6) 20%, rgba(20,20,20,1) 100%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    border: 1px solid var(--secondary--color);
+    border-radius: .5rem;
+    padding: var(--body-margin);
+    width: 50%;
+}
+
+.warning {
+    color: var(--secondary--color);
+    font-size: .70rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.red-warning {
+    color: var(--red);
+    margin-left: .125rem;
+    font-size: .75rem;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    column-gap: var(--body-margin);
+    row-gap: var(--body-padding);
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form-item.checkbox {
+    font-size: .75rem;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    gap: .5rem;
+    margin-right: auto;
+}
+
+.input {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    border: 1px solid var(--secondary--color);
+    border-radius: .25rem;
+    padding: calc(var(--body-padding) / 2);
+    width: 75%;
+}
+
+.form-item.checkbox .input {
+    width: unset;
+}
+
+.input.submit {
+    width: min-content;
+    padding: .75rem 1.25rem;
+    margin-top: var(--body-margin);
+    transition: .2s ease;
+    transition-property: background-color, transform;
+}
+
+.input.submit:hover {
+    background-color: var(--red);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.form-item.checkbox a {
+    text-decoration: underline;
+    color: var(--red);
+}
+
+@media (max-width: 1350px) {
+    h1 {
+        text-align: center;
+    }
+    
+    form {
+        width: 100%;
+    }
+
+    .image {
+        display: none;
+    }
+}

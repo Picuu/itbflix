@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>🎥 ITBFlix - Log In</title>
+    <title>🎥 ITBFlix - Registrarse</title>
 
     <link rel="icon" href="./src/logo.png" type="image/png">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
 
     <meta name="author" content="Carlos Capó">
     <meta name="description" content="Práctica CSS M04UF1. ITBFlix: Portal web al estilo Netflix.">
@@ -31,9 +33,82 @@
 
     <div class="main--container">
         <main>
-            <h2>Iniciar Sesión</h2>
+            <h1>Regístrate</h1>
+
+            <section>
+                <form action="./successfull-register.html" method="GET"">
+                    <span class="warning">Los campos marcados con<span class="red-warning">*</span> son obligatorios.</span>
+
+                    <div class="form-content">
+                        <div class="form-item">
+                            <label for="username">Nombre de Usuario<span class="red-warning">*</span></label>
+                            <input class="input" type="text" name="username" id="username" placeholder="Usuario123" required>
+                        </div>
+    
+                        <div class="form-item">
+                            <label for="email">Correo electrónico<span class="red-warning">*</span></label>
+                            <input class="input" type="email" name="email" id="email" placeholder="email@mail.com" required>
+                        </div>
+    
+                        <div class="form-item">
+                            <label for="password">Contraseña<span class="red-warning">*</span></label>
+                            <input class="input" type="password" name="password" id="password" required>
+                        </div>
+    
+                        <div class="form-item">
+                            <label for="password-confirm">Repita la contraseña<span class="red-warning">*</span></label>
+                            <input class="input" type="password" name="password-confirm" id="password-confirm" required>
+                        </div>
+    
+                        <div class="form-item">
+                            <label for="date">Fecha de nacimiento<span class="red-warning">*</span></label>
+                            <input class="input" type="date" name="date" id="date" required>
+                        </div>
+    
+                        <div class="form-item">
+                            <label for="language">Idioma<span class="red-warning">*</span></label>
+                            <select class="input" name="language" id="language" required>
+                                <option value="es">Español</option>
+                                <option value="en">Inglés</option>
+                                <option value="de">Alemán</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-item">
+                            <label for="file">Foto de perfil</label>
+                            <input class="input" type="file" name="file" id="file">
+                        </div>
+    
+                        <div class="form-item checkbox">
+                            <label for="checkbox">Aceptas los <a href="#">Términos y Condiciones</a> y la <a href="#">Política de Privacidad</a><span class="red-warning">*</span></label>
+                            <input class="input" type="checkbox" name="checkbox" id="checkbox" required>
+                        </div>
+                    </div>
+
+                    <button class="input submit" type="submit">Enviar</button>
+                </form>
+
+                <div class="image">
+                    <img src="./src/posters/peliculas/sin-novedad-en-el-frente.jpg" alt="Póster de la película Sin Novedad en el Frente">
+                </div>
+            </section>
         </main>
     </div>
+
+    <footer>
+        <div class="footer__content">
+            <ul class="rrss-list">
+                <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><i class='bx bxl-facebook-square'></i></a></li>
+                <li><a href="https://x.com" target="_blank" rel="noreferrer"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="https://youtube.com" target="_blank" rel="noreferrer"><i class='bx bxl-youtube'></i></a></li>
+            </ul>
+    
+            <address>Carrer d'Aiguablava 121<br>09033 Barcelona</address>
+    
+            <small>Copyright © 2023 - 2023</small>
+        </div>
+    </footer>
 
 </body>
 </html>

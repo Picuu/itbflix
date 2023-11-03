@@ -1,0 +1,34 @@
+section.content {
+    margin-top: 4rem;
+    background-color: rgba(0, 128, 0, .1);
+    border: 1px solid green;
+    border-radius: .5rem;
+    width: 60%;
+    padding: 5rem 3rem;
+    margin-inline: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 2rem;
+    color: green;
+    text-align: center;
+}
+
+section.return {
+    display: flex;
+    align-items: center;
+}
+
+section.return a {
+    width: max-content;
+    text-align: center;
+    color: var(--red);
+    text-decoration: underline;
+    margin-top: 4rem;
+    transition: color .2s ease;
+}
+
+section.return a:hover {
+    color: var(--text-color);
+}
