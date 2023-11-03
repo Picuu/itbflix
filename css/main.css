@@ -63,6 +63,7 @@ h2 {
 
 .nav--list {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -75,6 +76,18 @@ h2 {
     color: var(--red);
     background-color: var(--secondary--color);
 }
+
+.show-nav {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(20, 20, 20, .85);
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+  }
 
 /* ---------- MAIN ---------- */
 .main--container {
