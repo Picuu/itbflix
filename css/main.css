@@ -17,7 +17,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid purple; */
 }
 
 html {
@@ -204,7 +203,6 @@ article > a > p {
 }
 
 .poster-card-info > h4 {
-    /* font-size: .75rem; */
     text-align: center;
     margin: .5rem 0 0 0;
     padding: 0;
