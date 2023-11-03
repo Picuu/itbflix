@@ -15,6 +15,15 @@ h2 {
     gap: calc(var(--body-margin) * 2);
 }
 
+.section__content > article {
+    transition: transform .2s ease;
+}
+
+.section__content > article:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
 .poster {
     display: flex;
     flex-direction: row;
