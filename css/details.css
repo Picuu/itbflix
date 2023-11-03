@@ -6,6 +6,7 @@ img, iframe {
 iframe {
     height: auto;
     aspect-ratio: 16 / 9;
+    border: none;
 }
 
 h1 {
@@ -71,7 +72,12 @@ h1 {
     gap: var(--body-margin);
 }
 
-.info-description .texts p:last-of-type {
+.info-description .texts h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.info-description .texts p {
     font-weight: 200;
     color: grey;
 }

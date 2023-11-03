@@ -15,12 +15,12 @@ h1 {
     text-align: center;
 }
 
-section.return {
+.return {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-section.return a {
+.return a {
     width: max-content;
     text-align: center;
     color: var(--red);
@@ -29,6 +29,6 @@ section.return a {
     transition: color .2s ease;
 }
 
-section.return a:hover {
+.return a:hover {
     color: var(--text-color);
 }
